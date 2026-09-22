@@ -13,5 +13,11 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 });
 
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/roles', function () {
+        return Inertia::render('Roles/Index');
+    })->name('roles.index');
+});
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

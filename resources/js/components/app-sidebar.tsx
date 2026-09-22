@@ -13,6 +13,11 @@ const mainNavItems: NavItem[] = [
         url: '/dashboard',
         icon: LayoutGrid,
     },
+    {
+        title: 'Roles',
+        url: '/roles',
+        icon: Folder,
+    },
 ];
 
 const footerNavItems: NavItem[] = [
@@ -34,11 +39,11 @@ export function AppSidebar() {
             <SidebarHeader>
                 <SidebarMenu>
                     <SidebarMenuItem>
-                        <SidebarMenuButton size="lg" asChild>
+                        {/* <SidebarMenuButton size="lg" asChild>
                             <Link href="/dashboard" prefetch>
                                 <AppLogo />
                             </Link>
-                        </SidebarMenuButton>
+                        </SidebarMenuButton> */}
                     </SidebarMenuItem>
                 </SidebarMenu>
             </SidebarHeader>
